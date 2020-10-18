@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_telefono"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buscar_layout"
+            android:ems="15"
+            android:inputType="number"
+            android:hint="Buscar..."
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="10dp"
+            android:textColor="#99999999"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/img_buscar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="287dp"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/buscar_layout"
+            android:onClick="mc"
+            android:soundEffectsEnabled="true"
+            android:src="@android:drawable/ic_menu_call" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_vista"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp"
+        android:textAlignment="center" />
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/borde"
+        android:onClick="btn_cerrarsesion"
+        android:text="Cerrar sesion"
+        android:textColor="#55555555" />
+
+</LinearLayout>
